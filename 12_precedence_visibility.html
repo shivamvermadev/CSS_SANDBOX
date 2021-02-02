@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Precendence & Visibility</title>
+    <style>
+        /* class has higher precedence over the actual element ie the properties in the .class will override
+        the properties in the tag in style sheet even though the class is in upside of the style sheet */
+    
+        .heading {
+            color: coral;
+        }
+        h2 {
+            /* this property hides the element from the screen */
+            /* visibility: hidden; */
+            /* this propery removes the element from documnet object model */
+            /* display: none; */
+
+            /* !important makes that style to be implemented rather than the other style */
+            color: blue !important;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h2 class="heading">Heading</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non pariatur suscipit ad vero provident reprehenderit
+        voluptate labore doloribus reiciendis totam!</p>
+</body>
+
+</html>

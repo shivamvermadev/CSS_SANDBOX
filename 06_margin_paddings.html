@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin and padding</title>
+    <style>
+        /* CSS reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box {
+            background: #f4f4f4;
+            border: solid 2px #777;
+            width: 500px;
+            
+            /* by default the padding is added to the widht of the box to which it is applied so we have to set the box-sizing property to border box in css reset */
+            /* so as to stay at the actual widht of the container we set the box sizing to border box */
+
+            /* Padding  */
+            padding: 20px;
+
+            /* Padding per side */
+            padding-top: 10px;
+            padding-right: 20xp;
+            padding-bottom: 10px;
+            padding-left: 20px;
+
+            /* Padding shorthand top, right, bottom, left */
+            padding: 10px 20px 10px 20px;
+
+            /* Padding shorthand top/bottom  left/right */
+            padding: 10px 20px;
+
+            /* Margin */
+            margin: 20px;
+
+            /* Margin per side */
+            margin-top: 10px;
+            margin-right: 20xp;
+            margin-bottom: 10px;
+            margin-left: 20px;
+
+            /* Margin shorthand top, right, bottom, left */
+            margin: 10px 20px 10px 20px;
+
+            /* Margin shorthand top/bottom  left/right */
+            margin: 10px 20px;
+        }
+        .box h2, p {
+            padding-bottom: 20px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="box">
+        <h2>Heading one</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus assumenda deleniti animi est tempora qui
+            illo fuga molestiae nihil magnam.</p>
+    </div>
+    <div class="box">
+        <h2>Heading one</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus assumenda deleniti animi est tempora qui
+            illo fuga molestiae nihil magnam.</p>
+    </div>
+</body>
+
+</html>

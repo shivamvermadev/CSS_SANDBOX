@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and Align</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;            
+            line-height: 1.5em;
+        }
+        .box {
+            background: #f4f4f4;
+            border: solid 1px #333;
+            padding: 20px;
+            margin-bottom: 15px;
+        }
+        .container {
+            /* max-width allows you to make text responsive so it pushes the text down when the screen size is less than the max-widht */
+            max-width: 960px;
+            
+            /* margin auto adds the margin  to  the left and right of the container */
+            margin: auto;
+        }
+        /* text alignment */
+        .box p {
+            text-align: center;
+            text-align: left;
+            text-align: right;
+            /* justify try to makes the edges equal when the screen size decreases */
+            text-align: justify;
+        }
+        #box-2 {
+            float: left;
+            width: 68%;
+        }
+        #box-3 {
+            width: 30%;
+            float: right;
+        }
+        .clr {
+            clear: both;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="box-1" class="box">
+            <h2>Heading </h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos accusantium a amet, omnis iste similique
+                enim
+                facilis quia quaerat perferendis.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum reprehenderit animi quia libero
+                doloribus recusandae labore? Ex ut culpa quibusdam vitae alias non nulla rem eius temporibus doloremque?
+                Quidem, temporibus!</p>
+        </div>
+        <div id="box-2" class="box">
+            <h2>Heading </h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos accusantium a amet, omnis iste similique
+                enim
+                facilis quia quaerat perferendis.</p>
+        </div>
+        <div id="box-3" class="box">
+            <h2>Heading </h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos accusantium a amet, omnis iste similique
+                enim
+                facilis quia quaerat perferendis.</p>
+        </div>
+        
+        <!-- creating a utility class to clear the float if not done it makes the box-4 stick back to both box2 and 3 -->
+        <div class="clr"></div>
+        <div id="box-4" class="box">
+            <h2>Heading </h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos accusantium a amet, omnis iste similique
+                enim
+                facilis quia quaerat perferendis.</p>
+        </div>
+    </div>
+</body>
+
+</html>

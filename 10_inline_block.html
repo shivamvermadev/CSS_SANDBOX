@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline & Block</title>
+    <style>
+        li {
+            display: inline;
+        }
+
+        li a {
+            padding: 15px;
+            text-decoration: none;
+        }
+
+        img {
+            display: block;
+            /* margin auto doesn't work on inline elements it works on block elements */
+            margin: auto;
+            /* margin auto adds the margin to the left and the right of the element */
+
+        }
+        .box {
+            width: 32%;
+            box-sizing: border-box;
+            /* in div the display inline is ignored that is why we use inline-block */
+            display: inline-block;
+            display: inline-block;
+            background: #f4f4f4;
+            padding: 20px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a href="#">Tech</a></li>
+        <li><a href="#">Business</a></li>
+        <li><a href="#">Nature</a></li>
+    </ul>
+    <br><br>
+    <img src="./images/images.png" alt="No images">
+    <br><br>
+    <div class="box">
+        <h2>Heading</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores assumenda saepe ipsum atque est eligendi,
+            magni repudiandae ex molestiae accusamus.</p>
+    </div>
+    <div class="box">
+        <h2>Heading</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores assumenda saepe ipsum atque est eligendi,
+            magni repudiandae ex molestiae accusamus.</p>
+    </div>
+    <div class="box">
+        <h2>Heading</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores assumenda saepe ipsum atque est eligendi,
+            magni repudiandae ex molestiae accusamus.</p>
+    </div>
+</body>
+
+</html>
